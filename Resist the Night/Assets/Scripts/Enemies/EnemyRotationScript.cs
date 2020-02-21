@@ -1,22 +1,26 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Pathfinding;
 using UnityEngine;
-using Pathfinding;
 
-public class EnemyRotationScript : MonoBehaviour
+namespace Enemies
 {
-    public AIPath aiPath;
-
-    // Update is called once per frame
-    void Update()
+    public class EnemyRotationScript : MonoBehaviour
     {
-        if (aiPath.desiredVelocity.x >= 0.01f)
+    
+        public AIPath aiPath;
+        private float startedMoving = 0.01f;
+        private int scale = 3;
+        private readonly int ONE = 1;
+
+        void Update()
         {
-            transform.localScale = new Vector3(-3, 3, 1);
-        } 
-        else if (aiPath.desiredVelocity.x <= -0.01f)
-        {
-            transform.localScale = new Vector3(3, 3, 1);
+            if (aiPath.desiredVelocity.x >= startedMoving)
+            {
+                transform.localScale = new Vector3((-scale), scale, ONE);
+            } 
+            else if (aiPath.desiredVelocity.x <= (-startedMoving))
+            {
+                transform.localScale = new Vector3(scale, scale, ONE);
+            }
         }
     }
 }

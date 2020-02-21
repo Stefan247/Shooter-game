@@ -1,16 +1,26 @@
 ﻿using UnityEngine;
 
-public class EnemySpawnScript : MonoBehaviour
+namespace Enemies
 {
-    public GameObject crabPrefab;
-    public Transform spawnPoint;
-    void Start()
+    public class EnemySpawnScript : MonoBehaviour
     {
-        InvokeRepeating("SpawnCrab", 2.0f, Random.Range(5.0f, 10.0f));
-    }
     
-    public void SpawnCrab() 
-    {
-        Instantiate(crabPrefab, spawnPoint.position, Quaternion.identity);
+        public GameObject crabPrefab;
+        public Transform spawnPoint;
+        private static float low;
+        private static float high;
+        private static readonly float spawnDelay= 2f;
+    
+        void Start()
+        {
+            low = Random.Range(2f, 5f);
+            high = Random.Range(5f, 10f);
+            InvokeRepeating("SpawnCrab", spawnDelay, Random.Range(low, high));
+        }
+
+        private void SpawnCrab() 
+        {
+            Instantiate(crabPrefab, spawnPoint.position, Quaternion.identity);
+        }
     }
 }

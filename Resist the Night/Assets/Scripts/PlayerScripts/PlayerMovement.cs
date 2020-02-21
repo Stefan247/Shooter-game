@@ -1,58 +1,62 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+namespace PlayerScripts
 {
-    private float movementSpeed = 5f;
-    private Vector2 movement;
-    private Vector2 mousePos;
-
-    private Animator animator;
-    private Rigidbody2D rb;
-    private Camera cam;
-    private static readonly int IsMoving = Animator.StringToHash("isMoving");
-
-    private const float AngleAdjust = 90f;
+    public class PlayerMovement : MonoBehaviour
+    {
     
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-        cam = Camera.main;
-    }
+        private Animator animator;
+        private Rigidbody2D rb;
+        private Camera cam;
     
-    void Update()
-    {
-        Move();
-        LookAtMouse();
-    }
+        private Vector2 movement;
+        private Vector2 mousePos;
 
-    private void LookAtMouse()
-    {
-        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 lookDirection = mousePos - rb.position;
-        float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - AngleAdjust;
-        rb.rotation = angle;
-    }
+        private static readonly int IsMoving = Animator.StringToHash("isMoving");
+        private const float AngleAdjust = 90f;
+        private const int ZERO = 0;
+        private float movementSpeed = 5f;
 
-    private void Move()
-    {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-        AnimationCheck();
-
-        rb.MovePosition(rb.position + movement.normalized * (movementSpeed * Time.fixedDeltaTime));
-    }
-
-    private void AnimationCheck()
-    {
-        if (movement.x != 0 || movement.y != 0)
+        void Start()
         {
-            animator.SetBool(IsMoving, true);
+            rb = GetComponent<Rigidbody2D>();
+            animator = GetComponent<Animator>();
+            cam = Camera.main;
         }
-        else
+    
+        void Update()
         {
-            animator.SetBool(IsMoving, false);
+            Move();
+            PointAtCrosshair();
+        }
+    
+        private void Move()
+        {
+            movement.x = Input.GetAxisRaw("Horizontal");
+            movement.y = Input.GetAxisRaw("Vertical");
+            rb.MovePosition(rb.position + movement.normalized * (movementSpeed * Time.fixedDeltaTime));
+        
+            AnimationCheck();
+        }
+    
+        private void PointAtCrosshair()
+        {
+            mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 lookDirection = mousePos - rb.position;
+            float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - AngleAdjust;
+            rb.rotation = angle;
+        }
+
+        private void AnimationCheck()
+        {
+            if (movement.x != ZERO || movement.y != ZERO)
+            {
+                animator.SetBool(IsMoving, true);
+            }
+            else
+            {
+                animator.SetBool(IsMoving, false);
+            }
         }
     }
 }

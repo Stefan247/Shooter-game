@@ -1,17 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameOverMenuScript : MonoBehaviour
+namespace MenuScripts
 {
-    public void ExitToMenu()
+    public class GameOverMenuScript : MonoBehaviour
     {
-        SceneManager.LoadScene(0);
-    }
     
-    public void PlayAgain()
-    {
-        SceneManager.LoadScene(1);
+        public void ExitToMenu()
+        {
+            SceneManager.LoadScene(0); // Menu Scene
+        }
+    
+        public void PlayAgain()
+        {
+            SceneManager.LoadScene(1); // StartGame Scene
+        }
     }
 }

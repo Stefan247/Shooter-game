@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\GameDev\Resist the Night" t="IncludeRecursive">
+    <e p="C:\GameDev\unity-game\Resist the Night" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -237,8 +237,8 @@
           <e p="Enemies" t="Include">
             <e p="EnemyRotationScript.cs" t="Include" />
             <e p="EnemySpawnScript.cs" t="Include" />
+            <e p="ReceiveDamageEnemy.cs" t="Include" />
           </e>
-          <e p="EnemyHP.cs" t="Include" />
           <e p="Map" t="Include">
             <e p="BoundariesCheck.cs" t="Include" />
           </e>
@@ -248,11 +248,9 @@
             <e p="SettingsMenuScript.cs" t="Include" />
           </e>
           <e p="PlayerScripts" t="Include">
-            <e p="bulletDestroy.cs" t="Include" />
-            <e p="HealthDamageScript.cs" t="Include" />
+            <e p="BulletDestroyAndDamage.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
-            <e p="PlayerTouchMovement.cs" t="Include" />
-            <e p="ShootingAndroid.cs" t="Include" />
+            <e p="ReceiveDamagePlayer.cs" t="Include" />
             <e p="ShootingScript.cs" t="Include" />
           </e>
         </e>
@@ -339,6 +337,6 @@
       <e p="Temp\bin" t="ExcludeRecursive" />
     </e>
     <e p="C:\Users\stefa\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\stefa\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Resist the Night.-419328520.00" t="ExcludeRecursive" />
+    <e p="C:\Users\stefa\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Resist the Night.-67118628.00" t="ExcludeRecursive" />
   </component>
 </project>

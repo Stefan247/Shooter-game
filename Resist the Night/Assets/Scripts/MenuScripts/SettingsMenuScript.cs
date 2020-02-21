@@ -1,13 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Audio;
-public class SettingsMenuScript : MonoBehaviour
+
+namespace MenuScripts
 {
-    public AudioMixer audioMixer;
-    
-    public void SetVolume(float volume)
+    public class SettingsMenuScript : MonoBehaviour
     {
-        audioMixer.SetFloat("volumeParameter", volume);
+
+        public AudioMixer audioMixer;
+
+        public void SetVolume(float volume)
+        {
+            audioMixer.SetFloat("volumeParameter", volume);
+            /*
+         * Not being used yet.
+         */
+        }
     }
 }
