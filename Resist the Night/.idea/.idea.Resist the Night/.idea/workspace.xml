@@ -50,16 +50,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/HealthDamageScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemySpawnScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/ReceiveDamageEnemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Map/BoundariesCheck.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuScripts/GameOverMenuScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuScripts/MainMenuScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuScripts/SettingsMenuScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/BulletDestroyAndDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/ReceiveDamagePlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/ShootingScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyRotationScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/BulletDestroy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Map/BoundariesCheck.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/ReceiveDamagePlayer.cs" />
       </list>
     </option>
   </component>
@@ -145,6 +145,7 @@
       <workItem from="1582322236069" duration="1264000" />
       <workItem from="1582323517588" duration="9000" />
       <workItem from="1582323729670" duration="39000" />
+      <workItem from="1582323956688" duration="37000" />
     </task>
     <servers />
   </component>
