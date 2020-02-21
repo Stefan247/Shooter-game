@@ -248,7 +248,7 @@
             <e p="SettingsMenuScript.cs" t="Include" />
           </e>
           <e p="PlayerScripts" t="Include">
-            <e p="BulletDestroyAndDamage.cs" t="Include" />
+            <e p="BulletDestroy.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
             <e p="ReceiveDamagePlayer.cs" t="Include" />
             <e p="ShootingScript.cs" t="Include" />

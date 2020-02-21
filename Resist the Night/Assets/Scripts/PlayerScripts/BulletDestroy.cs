@@ -2,7 +2,7 @@
 
 namespace PlayerScripts
 {
-    public class BulletDestroyAndDamage : MonoBehaviour
+    public class BulletDestroy : MonoBehaviour
     {
         public GameObject explosion;
 

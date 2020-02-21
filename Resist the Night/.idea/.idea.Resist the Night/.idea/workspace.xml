@@ -13,9 +13,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyRotationScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/BulletDestroy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/EnemySpawnScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map/BoundariesCheck.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/BulletDestroyAndDamage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/ReceiveDamagePlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/ShootingScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/ReceiveDamageEnemy.cs" root0="FORCE_HIGHLIGHTING" />
@@ -59,6 +59,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/ReceiveDamagePlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/ShootingScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyRotationScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/BulletDestroy.cs" />
       </list>
     </option>
   </component>
@@ -143,6 +144,7 @@
       <workItem from="1582321344799" duration="742000" />
       <workItem from="1582322236069" duration="1264000" />
       <workItem from="1582323517588" duration="9000" />
+      <workItem from="1582323729670" duration="39000" />
     </task>
     <servers />
   </component>
