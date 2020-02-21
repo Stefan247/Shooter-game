@@ -1,19 +1,19 @@
 ﻿using UnityEngine;
 
-public class ShootingScript : MonoBehaviour
+namespace PlayerScripts
 {
-    public Transform firePoint;
-    public GameObject bulletPrefab;
-
-    public float bulletForce = 20f;
+    public class ShootingScript : MonoBehaviour
+    {
+        public Transform firePoint;
+        public GameObject bulletPrefab;
+        public float bulletForce = 20f;
     
-    void Update()
-    {    
-        if (Input.GetButtonDown("Fire1"))
+        private void Update()
         {
-            GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-            Rigidbody2D rigidbody = bullet.GetComponent<Rigidbody2D>();
-            rigidbody.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+            if (!Input.GetButtonDown("Fire1")) return;
+            var bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            var rigidBody = bullet.GetComponent<Rigidbody2D>();
+            rigidBody.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
         }
     }
 }

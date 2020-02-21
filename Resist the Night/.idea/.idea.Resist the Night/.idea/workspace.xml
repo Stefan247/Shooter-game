@@ -44,21 +44,21 @@
         <option value="$PROJECT_DIR$/Assets/EnemyHP.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyHP.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/bulletDestroy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/ShootingScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/bulletAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyHP.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyAttacking.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/HealthDamageScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyRotationScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemySpawnScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MenuScripts/MainMenuScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MenuScripts/GameOverMenuScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/ReceiveDamageEnemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Map/BoundariesCheck.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MenuScripts/GameOverMenuScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MenuScripts/MainMenuScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuScripts/SettingsMenuScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/BulletDestroyAndDamage.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/ReceiveDamageEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/ReceiveDamagePlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/ShootingScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyRotationScript.cs" />
       </list>
     </option>
   </component>
@@ -140,6 +140,9 @@
       <workItem from="1582310871003" duration="13000" />
       <workItem from="1582310963631" duration="99000" />
       <workItem from="1582311084633" duration="4727000" />
+      <workItem from="1582321344799" duration="742000" />
+      <workItem from="1582322236069" duration="1264000" />
+      <workItem from="1582323517588" duration="9000" />
     </task>
     <servers />
   </component>
@@ -166,6 +169,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1582311057605" />
+    <state x="691" y="243" key="RiderGenerateDialog" timestamp="1582322394283">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="691" y="243" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582322394283" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1582311184032">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

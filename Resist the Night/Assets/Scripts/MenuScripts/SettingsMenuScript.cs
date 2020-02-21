@@ -5,15 +5,14 @@ namespace MenuScripts
 {
     public class SettingsMenuScript : MonoBehaviour
     {
-
         public AudioMixer audioMixer;
 
-        public void SetVolume(float volume)
+        private void SetVolume(float volume)
         {
             audioMixer.SetFloat("volumeParameter", volume);
             /*
-         * Not being used yet.
-         */
+             *  Not being used yet.
+             */
         }
     }
 }

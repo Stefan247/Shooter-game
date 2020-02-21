@@ -5,13 +5,12 @@ namespace MenuScripts
 {
     public class GameOverMenuScript : MonoBehaviour
     {
-    
-        public void ExitToMenu()
+        private void ExitToMenu()
         {
             SceneManager.LoadScene(0); // Menu Scene
         }
     
-        public void PlayAgain()
+        private void PlayAgain()
         {
             SceneManager.LoadScene(1); // StartGame Scene
         }

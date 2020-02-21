@@ -1,10 +1,10 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace PlayerScripts
 {
     public class PlayerMovement : MonoBehaviour
     {
-    
         private Animator animator;
         private Rigidbody2D rb;
         private Camera cam;
@@ -13,18 +13,18 @@ namespace PlayerScripts
         private Vector2 mousePos;
 
         private static readonly int IsMoving = Animator.StringToHash("isMoving");
+        private const float MovementSpeed = 5f;
         private const float AngleAdjust = 90f;
-        private const int ZERO = 0;
-        private float movementSpeed = 5f;
+        private const int Zero = 0;
 
-        void Start()
+        private void Start()
         {
             rb = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
             cam = Camera.main;
         }
     
-        void Update()
+        private void Update()
         {
             Move();
             PointAtCrosshair();
@@ -34,7 +34,7 @@ namespace PlayerScripts
         {
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
-            rb.MovePosition(rb.position + movement.normalized * (movementSpeed * Time.fixedDeltaTime));
+            rb.MovePosition(rb.position + movement.normalized * (MovementSpeed * Time.fixedDeltaTime));
         
             AnimationCheck();
         }
@@ -42,21 +42,14 @@ namespace PlayerScripts
         private void PointAtCrosshair()
         {
             mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-            Vector2 lookDirection = mousePos - rb.position;
-            float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - AngleAdjust;
-            rb.rotation = angle;
+            var lookDirection = mousePos - rb.position;
+            rb.rotation = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - AngleAdjust;
         }
 
         private void AnimationCheck()
         {
-            if (movement.x != ZERO || movement.y != ZERO)
-            {
-                animator.SetBool(IsMoving, true);
-            }
-            else
-            {
-                animator.SetBool(IsMoving, false);
-            }
+            double tolerance = 0.01f;
+            animator.SetBool(IsMoving, (Math.Abs(movement.x - Zero) > tolerance || Math.Abs(movement.y - Zero) > tolerance));
         }
     }
 }

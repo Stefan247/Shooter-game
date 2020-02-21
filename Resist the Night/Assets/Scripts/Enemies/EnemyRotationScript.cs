@@ -5,22 +5,18 @@ namespace Enemies
 {
     public class EnemyRotationScript : MonoBehaviour
     {
-    
         public AIPath aiPath;
-        private float startedMoving = 0.01f;
-        private int scale = 3;
-        private readonly int ONE = 1;
 
-        void Update()
+        private const float StartedMoving = 0.01f;
+        private const int Scale = 3;
+        private const int One = 1;
+
+        private void Update()
         {
-            if (aiPath.desiredVelocity.x >= startedMoving)
-            {
-                transform.localScale = new Vector3((-scale), scale, ONE);
-            } 
-            else if (aiPath.desiredVelocity.x <= (-startedMoving))
-            {
-                transform.localScale = new Vector3(scale, scale, ONE);
-            }
+            Vector3 localScale;
+            localScale = aiPath.desiredVelocity.x >= StartedMoving ? 
+                new Vector3((-Scale), Scale, One) : new Vector3(Scale, Scale, One);
+            transform.localScale = localScale;
         }
     }
 }
