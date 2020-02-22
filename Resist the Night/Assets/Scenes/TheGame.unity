@@ -558,6 +558,7 @@ GameObject:
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -699,6 +700,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3ff33ae9630764ab28eec3a7f3e6a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &623662858 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1588510160740070358, guid: 42a49d195b316c14a9a2e37c81148263,
@@ -3909,6 +3922,7 @@ MonoBehaviour:
   firePoint: {fileID: 1393841185}
   bulletPrefab: {fileID: 8045285861099917715, guid: ce6c0ef6bb9aee4458ba6bb76891a069,
     type: 3}
+  cameraShake: {fileID: 519420034}
   bulletForce: 20
 --- !u!114 &1873871851
 MonoBehaviour:

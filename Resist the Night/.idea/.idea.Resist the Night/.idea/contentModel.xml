@@ -234,6 +234,9 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="CameraScripts" t="Include">
+            <e p="CameraShake.cs" t="Include" />
+          </e>
           <e p="Enemies" t="Include">
             <e p="EnemyRotationScript.cs" t="Include" />
             <e p="EnemySpawnScript.cs" t="Include" />
