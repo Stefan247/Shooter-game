@@ -10,8 +10,8 @@ namespace PlayerScripts
         public CameraShake cameraShake;
         public float bulletForce = 20f;
 
-        private float fireSpeed = .2f;
-        private float fireRate = .2f;
+        private float fireSpeed = .1f;
+        private float fireRate = .1f;
         private const float Zero = 0f;
         // private float screenShakeMagnitude = 0.1f;
         // private float screenShakeDuration = 0.2f;

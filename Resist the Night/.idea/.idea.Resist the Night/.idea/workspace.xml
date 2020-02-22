@@ -57,14 +57,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuScripts/SettingsMenuScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/BulletDestroyAndDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyRotationScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/BulletDestroy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Map/BoundariesCheck.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraScripts/CameraShake.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/PlayerHealthBar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/ReceiveDamagePlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/ShootingScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/BulletDestroy.cs" />
+        <option value="$PROJECT_DIR$/Assets/BackgroundAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/ReceiveDamagePlayer.cs" />
       </list>
     </option>
   </component>
@@ -155,6 +156,8 @@
       <workItem from="1582373189251" duration="4415000" />
       <workItem from="1582383622760" duration="1652000" />
       <workItem from="1582385290281" duration="127000" />
+      <workItem from="1582393322608" duration="664000" />
+      <workItem from="1582394111851" duration="90000" />
     </task>
     <servers />
   </component>

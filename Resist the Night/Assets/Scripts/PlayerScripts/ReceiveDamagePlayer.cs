@@ -40,9 +40,10 @@ namespace PlayerScripts
         {
             if (hitPoints <= Zero)
             {
-                Destroy(gameObject);
-                var expl = Instantiate(deadPlayer, transform.position, Quaternion.identity);
+                Transform trans = transform;
+                var expl = Instantiate(deadPlayer, trans.position, trans.rotation);
                 Destroy(expl, ExplosionTime);
+                Destroy(gameObject);
             
                 await Task.Delay(TimeSpan.FromSeconds(DeathDelay));
                 SceneManager.LoadScene(2); // After death menu

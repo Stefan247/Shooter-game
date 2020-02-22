@@ -16,13 +16,15 @@ namespace PlayerScripts
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
-            Destroy(gameObject);
-            var expl = Instantiate(explosion, transform.position, Quaternion.identity);
-            Destroy(expl, explosionTime);
-
-            if (collision.collider.CompareTag("Bullet"))
+            if (collision.collider.CompareTag("Bullet") || collision.collider.CompareTag("Player"))
             {
                 Physics2D.IgnoreCollision(collision.collider, GetComponent<Collider2D>());
+            }
+            else
+            {
+                Destroy(gameObject);
+                var expl = Instantiate(explosion, transform.position, Quaternion.identity);
+                Destroy(expl, explosionTime);
             }
         }
     }
