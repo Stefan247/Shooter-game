@@ -19,7 +19,9 @@ namespace PlayerScripts
             var bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             var rigidBody = bullet.GetComponent<Rigidbody2D>();
             rigidBody.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
-            StartCoroutine(cameraShake.Shake(screenShakeDuration, screenShakeMagnitude));
+            /*
+             * StartCoroutine(cameraShake.Shake(screenShakeDuration, screenShakeMagnitude));
+             */
         }
     }
 }
