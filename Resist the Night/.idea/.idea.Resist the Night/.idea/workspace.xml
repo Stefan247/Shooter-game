@@ -60,12 +60,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/BulletDestroy.cs" />
         <option value="$PROJECT_DIR$/Assets/BackgroundAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/AstarPathfindingProject/Behaviors/AIDestinationSetter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/ReceiveDamagePlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuScripts/GameOverMenuScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuScripts/MainMenuScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/ReceiveDamageEnemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemySpawnScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/ReceiveDamagePlayer.cs" />
       </list>
     </option>
   </component>
@@ -159,6 +159,7 @@
       <workItem from="1582393322608" duration="664000" />
       <workItem from="1582394111851" duration="90000" />
       <workItem from="1582401626190" duration="3762000" />
+      <workItem from="1582406273456" duration="179000" />
     </task>
     <servers />
   </component>

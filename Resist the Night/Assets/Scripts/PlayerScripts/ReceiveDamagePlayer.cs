@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Threading.Tasks;
 using UI;
 using UnityEngine;
@@ -37,7 +38,7 @@ namespace PlayerScripts
 #pragma warning restore 4014
         }
 
-        private async Task CheckIfStillAlive()
+        private void CheckIfStillAlive()
         {
             if (hitPoints <= Zero && playerDead == false)
             {
@@ -48,10 +49,13 @@ namespace PlayerScripts
                 
                 gameObject.GetComponent<SpriteRenderer>().enabled = false;
                 Destroy(expl, ExplosionTime);
-                
-                await Task.Delay(TimeSpan.FromSeconds(DeathDelay));
-                SceneManager.LoadScene("GameOver"); // After death menu
+                Invoke("DeathFunction", DeathDelay);
             }
+        }
+
+        private void DeathFunction()
+        {
+            SceneManager.LoadScene("GameOver"); // After death menu
         }
     }
 }
