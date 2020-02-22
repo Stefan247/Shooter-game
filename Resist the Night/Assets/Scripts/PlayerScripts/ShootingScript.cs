@@ -9,10 +9,10 @@ namespace PlayerScripts
         public GameObject bulletPrefab;
         public CameraShake cameraShake;
         public float bulletForce = 20f;
-        
-        private float screenShakeMagnitude = 0.03f;
-        private float screenShakeDuration = 0.15f;
-
+        /*
+         * private float screenShakeMagnitude = 0.03f;
+         * private float screenShakeDuration = 0.15f;
+         */
         private void Update()
         {
             if (!Input.GetButtonDown("Fire1")) return;

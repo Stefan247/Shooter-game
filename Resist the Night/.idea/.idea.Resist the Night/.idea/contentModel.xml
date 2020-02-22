@@ -256,6 +256,9 @@
             <e p="ReceiveDamagePlayer.cs" t="Include" />
             <e p="ShootingScript.cs" t="Include" />
           </e>
+          <e p="UI" t="Include">
+            <e p="PlayerHealthBar.cs" t="Include" />
+          </e>
         </e>
         <e p="ShooterSpritePack" t="Include">
           <e p="Readme.txt" t="Include" />
