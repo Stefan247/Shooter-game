@@ -11,10 +11,11 @@ namespace PlayerScripts
         public PlayerHealthBar healthBar;
         public GameObject deadPlayer;
         public float hitPoints;
-        public float maxHitPoints = 1000; // to be used in the future
-        
+        public float maxHitPoints = 1000;
+
+        private bool playerDead;
         private const float EnemyDamage = 20f;
-        private const float DeathDelay = 0.9f;
+        private const float DeathDelay = 0.5f;
         private const float ExplosionTime = 1f;
         private const int Zero = 0;
 
@@ -23,6 +24,7 @@ namespace PlayerScripts
             hitPoints = maxHitPoints;
             healthBar.SetMaxHealth(maxHitPoints);
         }
+
         private void OnCollisionStay2D(Collision2D collision)
         {
             if (collision.collider.CompareTag("Enemy"))
@@ -30,23 +32,25 @@ namespace PlayerScripts
                 hitPoints -= EnemyDamage;
                 healthBar.SetHealth(hitPoints);
             }
-
-        #pragma warning disable 4014
+#pragma warning disable 4014
             CheckIfStillAlive();
-        #pragma warning restore 4014
+#pragma warning restore 4014
         }
-    
+
         private async Task CheckIfStillAlive()
         {
-            if (hitPoints <= Zero)
+            if (hitPoints <= Zero && playerDead == false)
             {
-                Transform trans = transform;
+                playerDead = true;
+                
+                var trans = transform;
                 var expl = Instantiate(deadPlayer, trans.position, trans.rotation);
+                
+                gameObject.GetComponent<SpriteRenderer>().enabled = false;
                 Destroy(expl, ExplosionTime);
-                Destroy(gameObject);
-            
+                
                 await Task.Delay(TimeSpan.FromSeconds(DeathDelay));
-                SceneManager.LoadScene(2); // After death menu
+                SceneManager.LoadScene("GameOver"); // After death menu
             }
         }
     }

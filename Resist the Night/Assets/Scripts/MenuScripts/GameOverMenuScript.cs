@@ -7,12 +7,12 @@ namespace MenuScripts
     {
         private void ExitToMenu()
         {
-            SceneManager.LoadScene(0); // Menu Scene
+            SceneManager.LoadScene("MainMenu"); // Menu Scene
         }
     
         private void PlayAgain()
         {
-            SceneManager.LoadScene(1); // StartGame Scene
+            SceneManager.LoadScene("TheGame"); // StartGame Scene
         }
     }
 }

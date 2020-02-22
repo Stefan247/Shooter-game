@@ -16,7 +16,8 @@ namespace PlayerScripts
         private const float MovementSpeed = 5f;
         private const float AngleAdjust = 90f;
         private const int Zero = 0;
-
+        private const double Tolerance = 0.01f;
+        
         private void Start()
         {
             rb = GetComponent<Rigidbody2D>();
@@ -48,8 +49,7 @@ namespace PlayerScripts
 
         private void AnimationCheck()
         {
-            double tolerance = 0.01f;
-            animator.SetBool(IsMoving, (Math.Abs(movement.x - Zero) > tolerance || Math.Abs(movement.y - Zero) > tolerance));
+            animator.SetBool(IsMoving, (Math.Abs(movement.x - Zero) > Tolerance || Math.Abs(movement.y - Zero) > Tolerance));
         }
     }
 }

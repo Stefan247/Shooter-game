@@ -7,7 +7,7 @@ namespace Enemies
         public float hitPoints = 100f;
         public GameObject deathExplosion;
         
-        private float explosionTime = 0.15f;
+        [SerializeField] private float explosionTime = 0.15f;
         private const float BulletDamage = 34f;
         private const int Zero = 0;
 

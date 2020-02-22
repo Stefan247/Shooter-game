@@ -39,7 +39,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/bulletDestroy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemySpawnScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/AstarPathfindingProject/Behaviors/AIDestinationSetter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerTouchMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/ShootingAndroid.cs" />
@@ -50,22 +49,23 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyHP.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyAttacking.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/HealthDamageScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemySpawnScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/ReceiveDamageEnemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MenuScripts/GameOverMenuScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MenuScripts/MainMenuScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuScripts/SettingsMenuScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/BulletDestroyAndDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyRotationScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Map/BoundariesCheck.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraScripts/CameraShake.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/PlayerHealthBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/ShootingScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/BulletDestroy.cs" />
         <option value="$PROJECT_DIR$/Assets/BackgroundAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/AstarPathfindingProject/Behaviors/AIDestinationSetter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/ReceiveDamagePlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MenuScripts/GameOverMenuScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MenuScripts/MainMenuScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/ReceiveDamageEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemySpawnScript.cs" />
       </list>
     </option>
   </component>
@@ -158,6 +158,7 @@
       <workItem from="1582385290281" duration="127000" />
       <workItem from="1582393322608" duration="664000" />
       <workItem from="1582394111851" duration="90000" />
+      <workItem from="1582401626190" duration="3762000" />
     </task>
     <servers />
   </component>
@@ -192,5 +193,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582311184032" />
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582405490851">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582405490851" />
   </component>
 </project>

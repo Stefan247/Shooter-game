@@ -7,10 +7,7 @@ namespace MenuScripts
    {
       private void StartGame()
       {
-         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Start Game
-         /*
-          *  SceneManager.LoadScene(1);
-          */
+         SceneManager.LoadScene("TheGame"); // Start Game
       }
    
       private void QuitGame()
