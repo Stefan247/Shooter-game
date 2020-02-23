@@ -248,7 +248,11 @@
           <e p="MenuScripts" t="Include">
             <e p="GameOverMenuScript.cs" t="Include" />
             <e p="MainMenuScript.cs" t="Include" />
+            <e p="PauseMenu.cs" t="Include" />
             <e p="SettingsMenuScript.cs" t="Include" />
+          </e>
+          <e p="MusicScripts" t="Include">
+            <e p="MusicPaused.cs" t="Include" />
           </e>
           <e p="PlayerScripts" t="Include">
             <e p="BulletDestroy.cs" t="Include" />
