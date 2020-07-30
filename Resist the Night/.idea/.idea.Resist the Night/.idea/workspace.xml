@@ -21,7 +21,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MusicScripts/MusicPaused.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/ShootingScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/ReceiveDamageEnemy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://D:/UnityHub/2019.3.1f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Slider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AstarPathfindingProject/PackageTools/Editor/EditorBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AstarPathfindingProject/Behaviors/AIDestinationSetter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PlayerHealthBar.cs" root0="FORCE_HIGHLIGHTING" />
@@ -51,7 +50,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyHP.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyAttacking.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/HealthDamageScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MenuScripts/SettingsMenuScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/BulletDestroyAndDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyRotationScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Map/BoundariesCheck.cs" />
@@ -71,6 +69,8 @@
         <option value="$PROJECT_DIR$/Assets/PauseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MusicScripts/MusicPaused.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuScripts/PauseMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MusicScripts/KeepMusicScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MenuScripts/SettingsMenuScript.cs" />
       </list>
     </option>
   </component>
@@ -168,6 +168,8 @@
       <workItem from="1582407067603" duration="969000" />
       <workItem from="1582454246585" duration="984000" />
       <workItem from="1582455530430" duration="1675000" />
+      <workItem from="1582469393136" duration="1590000" />
+      <workItem from="1582471112508" duration="26000" />
     </task>
     <servers />
   </component>
